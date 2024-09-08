@@ -1,9 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
+import Main from './components/Main.js';
 
 function App() {
   return (
-    <h1>Teste</h1>
+    <Main />
   );
 }
 
