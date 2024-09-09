@@ -1,5 +1,8 @@
+//Import da classe Aluno
 import { Aluno } from '../classes/Aluno.js';
 import '../App.css';
+
+//Lista contendo um objeto onde há uma relação de alunos já cadastrados
 const listaAlunosAntiga = [
     {
         nome: 'Rodrigo Duarte',
@@ -18,6 +21,7 @@ const listaAlunosAntiga = [
     }
 ];
 
+//A cada cadastro de um novo aluno, o mesmo será adicionado a esta lista, onde já há uma lista com dados cadastrados, inseridos via spread operator
 const alunos = [...listaAlunosAntiga];
 
 const nome = window.prompt('Informe o nome do aluno: ');
