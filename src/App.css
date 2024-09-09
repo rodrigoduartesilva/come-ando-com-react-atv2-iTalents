@@ -1,5 +1,26 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: #e0d1d1;
+  background-color: #ebe6e6;
+}
+
+.main__title {
+  color: #2f00ff;
+}
+
+.main__subtitle {
+  color: #4022ca;
+}
+
+.main__title, .main__subtitle {
+  padding: 15px;
+  text-align: center;
+}
+
+.main__list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 80px;
 }

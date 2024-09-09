@@ -1,4 +1,5 @@
 import { Aluno } from '../classes/Aluno.js';
+import '../App.css';
 const listaAlunosAntiga = [
     {
         nome: 'Rodrigo Duarte',
@@ -30,9 +31,9 @@ alunos.push(aluno);
 function Main() {
     return (
         <>
-            <h1>Atividade 2 - iTalents</h1>
-            <h2>Escola Samira A Gata - Dados dos Alunos Cadastrados</h2>
-            <ul>
+            <h1 className='main__title'>Atividade 2 - iTalents</h1>
+            <h2 className='main__subtitle'>Escola Samira A Gata - Dados dos Alunos Cadastrados</h2>
+            <ul className='main__list'>
                 {alunos.map(aluno => (
                     <li>Aluno: {aluno.nome} - Idade: {aluno.idade} anos - {aluno.idade >= 18 ? 'Aluno Maior de Idade' : 'Aluno Menor de Idade'} - Grau Escolar: {aluno.grauEscolar}</li>
                 ))}
